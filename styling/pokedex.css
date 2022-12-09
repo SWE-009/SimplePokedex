@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d6d6d6;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#pokedex {
+  width: 22rem;
+  height: 35rem;
+  background-color: rgb(116, 204, 72);
+  border-radius: 8px;
+  padding: 0.3rem;
+}
+
+#pokedex-top {
+  height: 40%;
+  padding: 0.5rem;
+  background: url("https://tinyurl.com/5ar6m6y8");
+  background-size: 200px;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+#card-top {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+#searchbar {
+  color: white;
+  background: none;
+  border: none;
+  font-size: large;
+  font-weight: bold;
+}
+#searchbar:focus {
+  outline: none;
+}
+
+#poke-card {
+  display: flex;
+  justify-content: center;
+}
+
+#poke-image {
+  width: 200px;
+  height: 200px;
+  transform: translateY(4rem);
+}
+
+#poke-data {
+  background-color: white;
+  height: 60%;
+  border-radius: 6px;
+  padding-top: 5rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#poke-type {
+  gap: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+#poke-type span {
+  border-radius: 1rem;
+  background: slategray;
+  color: white;
+  padding: 0.12rem 0.5rem;
+}
+
+#poke-data h2 {
+  text-align: center;
+}
+
+/* Base Stats Styling */
+#poke-stats {
+  width: 80%;
+  font-size: 1rem;
+}
+
+.stat-row {
+  display: flex;
+  border: 1px solid black;
+}
+.stat-name,
+.stat-value {
+  width: 20%;
+}
+
+.stat-name {
+  color: green;
+  font-weight: bold;
+  padding-right: 0.7rem;
+  border-right: 1px solid;
+}
+
+.stat-bar {
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+.outer-bar {
+  background-color: lightgreen;
+  width: 100%;
+  height: 0.4rem;
+  border-radius: 4px;
+  display: flex;
+}
+.inner-bar {
+  background-color: darkgreen;
+  width: 40%;
+  border-radius: 4px;
+}

@@ -4,11 +4,90 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style rel="stylesheet" href="styling/pokedex.css"></style>
+    <link rel="stylesheet" href="./styling/pokedex.css"></style>
     <title>Pokedex</title>
   </head>
   <body>
-    <div>Testing</div>
+    <div id="pokedex">
+      <div id="pokedex-top">
+        <form action="">
+          <div id="card-top">
+            <input 
+              type="text" 
+              id="searchbar" 
+              value="Test"
+            />
+        </form>
+          <span id="poke-id">#001</span>
+        </div>
+        <div id="poke-card">
+          <img src="https://wiki.pokemon3d.net/images/b/b8/Treecko.png" id="poke-image" alt="">
+        </div>
+      </div>
+      <div id="poke-data">
+        <div id="poke-type">
+          <span style="background-color: green;">Grass</span>
+          <span style="background-color: darkred;">Fighting</span>
+        </div>
+        <h2>View Base Stats</h2>
+        <div id="poke-stats">
+          <div class="stat-row">
+            <div class="stat-name">HP</div>
+            <div class="stat-value">090</div>
+            <div class="stat-bar">
+              <div class="outer-bar">
+                <div class="inner-bar" style="width: 80%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="stat-row">
+            <div class="stat-name">ATK</div>
+            <div class="stat-value">090</div>
+            <div class="stat-bar">
+              <div class="outer-bar">
+                <div class="inner-bar" style="width: 65%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="stat-row">
+            <div class="stat-name">DEF</div>
+            <div class="stat-value">090</div>
+            <div class="stat-bar">
+              <div class="outer-bar">
+                <div class="inner-bar" style="width: 50%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="stat-row">
+            <div class="stat-name">SATK</div>
+            <div class="stat-value">090</div>
+            <div class="stat-bar">
+              <div class="outer-bar">
+                <div class="inner-bar" style="width: 60%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="stat-row">
+            <div class="stat-name">SDEF</div>
+            <div class="stat-value">090</div>
+            <div class="stat-bar">
+              <div class="outer-bar">
+                <div class="inner-bar" style="width: 45%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="stat-row">
+            <div class="stat-name">SPD</div>
+            <div class="stat-value">090</div>
+            <div class="stat-bar">
+              <div class="outer-bar">
+                <div class="inner-bar" style="width: 50%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="script/pokedex.js"></script>
   </body>
 </html>
